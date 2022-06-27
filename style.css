@@ -1,0 +1,51 @@
+
+#landingImage { 
+    background-image: url(./assets/miami-beach.jpg);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    min-height: 100vh;
+    border: 2px solid black;
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+main {
+    min-height: 100vh;
+    background-color: cadetblue;
+    z-index: 2;
+}
+#landingText{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    font-size: larger;
+    margin-top: -25rem;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    min-height: 50vh;
+}
+
+.owl-carousel{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+#properties{
+    z-index: 2;
+    min-height: 150vh;
+}
+
+#propertyCards{
+    position: relative;
+    top: 19rem;
+}
