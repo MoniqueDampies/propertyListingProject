@@ -32,20 +32,20 @@ e08d : 1200 Sq Ft
 `;
 document.getElementById("card2").innerHTML = `
 <img src="./assets/012-592x444.jpg" width="100%">
-<h5>$11,000/mo</h5>
+<h5>$365,000/mo</h5>
 <div class="text-start px-3 pt-2">
-<h5>New Apartment Nice View</h5>
+<h5>Modern Apartment For Sale</h5>
 <p>6701 South Dixie Highway, Miami, FL, USA</p>
 
 
 <p>
-<i class="fa-solid fa-bed"></i> : 3
+<i class="fa-solid fa-bed"></i> : 2
 
 <i class="fa-solid fa-shower"></i> : 1
 
 <i class="fa-solid fa-car"></i> : 1
 
-e08d : 1200 Sq Ft
+e08d : 1478 Sq Ft
 </p>
 
 <p><b>Apartment</b></p>
@@ -64,20 +64,20 @@ e08d : 1200 Sq Ft
 `;
 document.getElementById("card3").innerHTML = `
 <img src="./assets/018-592x444.jpg" width="100%">
-<h5>$11,000/mo</h5>
+<h5>$589,000</h5>
 <div class="text-start px-3 pt-2">
-<h5>New Apartment Nice View</h5>
-<p>6701 South Dixie Highway, Miami, FL, USA</p>
+<h5>Apartment In Complex Building</h5>
+<p>7900 Northwest 27th Avenue, Miami, FL, USA</p>
 
 
 <p>
-<i class="fa-solid fa-bed"></i> : 3
+<i class="fa-solid fa-bed"></i> : 2
 
-<i class="fa-solid fa-shower"></i> : 1
+<i class="fa-solid fa-shower"></i> : 2 
 
-<i class="fa-solid fa-car"></i> : 1
+<i class="fa-solid fa-car"></i> : 2
 
-e08d : 1200 Sq Ft
+e08d : 2960 Sq Ft
 </p>
 
 <p><b>Apartment</b></p>
@@ -86,10 +86,12 @@ e08d : 1200 Sq Ft
 <div class="container">
 <div class="row">
 <div class="col-6">
-<p class="text-start"><i class="fa-solid fa-user"></i>Shane Stevens</p>
+<p class="text-start"><i class="fa-solid fa-user">
+</i>Mike Moore</p>
 </div>
 <div class="col-6">
-<p><i class="fa-solid fa-link"></i>2 years ago</p>
+<p><i class="fa-solid fa-link"></i>
+2 years ago</p>
 </div>
 </div>
 </div>
