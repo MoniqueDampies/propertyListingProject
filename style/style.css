@@ -1,0 +1,106 @@
+
+#landingImage { 
+    background-image: url(./assets/miami-beach.jpg);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    margin-top: -50px;
+    min-height: 100vh;
+    filter: brightness(50%);
+    z-index: -99;
+}
+
+#cards {
+    height: 15rem;
+    background-color: blueviolet;
+    border: 2px solid black;
+    color: aliceblue;
+  }
+
+main {
+    min-height: 100vh;
+    background-color: bisque;
+}
+#landingText{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    margin-top: -22rem;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+#navbarSupportedContent{
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+}
+
+#listingBtn{
+    border: 1px solid white;
+    background-color: rgba(128, 128, 128, 0.579);
+    position: relative;
+    display: inline;
+    padding: 12px;
+    font-weight: 600;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin-left: 10rem;
+    z-index: ;
+}
+
+.navbar{
+    position: relative;
+    z-index: 3;
+    font-weight: 600;
+    display: flexbox;
+    justify-content: space-evenly;
+    text-justify: distribute;
+    margin-bottom: -4rem;
+    padding-bottom: 2rem;
+    background-color: transparent;
+}
+
+.heading {
+    font-family: "Roboto", Sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: capitalize;   
+}
+
+.small-heading{
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: gray;
+    min-height: 50vh;
+}
+
+.owl-carousel{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
