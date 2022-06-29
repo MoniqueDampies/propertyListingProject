@@ -1,159 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/44c77e8444.js" crossorigin="anonymous"></script>
 
-        <!-- GET THESE FROM OWL CAROUSEL CDN -->
-        <!-- https://cdnjs.com/libraries/OwlCarousel2 -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <!-- bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-        <!-- personal css -->
-        <link rel="stylesheet" href="../style/adminstyle.css">
-    <title>Admin</title>
-  </head>
-  <body class="bg-dark">
-    <div class="area"></div>
-    <nav class="main-menu bg-secondary">
-      <ul>
-        <li>
-          <a href="http://justinfarrow.com">
-            <i class="fa fa-home fa-2x"></i>
-            <span class="nav-text">MY DASHBOARD </span>
-          </a>
-        </li>
-        <li class="has-subnav">
-          <a href="#">
-            <i class="fa fa-laptop fa-2x"></i>
-            <span class="nav-text"> SETTINGS </span>
-          </a>
-        </li>
-        <li class="has-subnav">
-          <a href="#">
-            <i class="fa fa-list fa-2x"></i>
-            <span class="nav-text"> HOMEPAGE </span>
-          </a>
-        </li>
-        <li class="has-subnav">
-          <a href="#">
-            <i class="fa fa-folder-open fa-2x"></i>
-            <span class="nav-text"> PRODUCTS </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-bar-chart-o fa-2x"></i>
-            <span class="nav-text"> ORDERS </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-font fa-2x"></i>
-            <span class="nav-text"> BLOG </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-table fa-2x"></i>
-            <span class="nav-text"> PERFORMANCE </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-map-marker fa-2x"></i>
-            <span class="nav-text"> SUPPORT </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/44c77e8444.js" crossorigin="anonymous"></script>
 
-    <header id="main-header" class="bg-secondary text-white p-4 mb-3">
-        <!-- heading -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 id="header-title">CRM</h1>
-          </div>
+  <!-- GET THESE FROM OWL CAROUSEL CDN -->
+  <!-- https://cdnjs.com/libraries/OwlCarousel2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-          <!-- search bar -->
-          <div class="col-md-6 align-self-center">
-            <input
-              type="text"
-              class="form-control"
-              id="filter"
-              placeholder="Search properties..."
-            />
-          </div>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- personal css -->
+  <link rel="stylesheet" href="../style/adminstyle.css">
+  <title>Admin</title>
+</head>
+
+<body class="bg-dark">
+  <div class="area"></div>
+  <!-- NAV BAR -->
+  <nav class="main-menu bg-secondary">
+    <ul>
+      <li>
+        <a href="http://justinfarrow.com">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">MY DASHBOARD </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="#">
+          <i class="fa fa-laptop fa-2x"></i>
+          <span class="nav-text"> SETTINGS </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="#">
+          <i class="fa fa-list fa-2x"></i>
+          <span class="nav-text"> HOMEPAGE </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="#">
+          <i class="fa fa-folder-open fa-2x"></i>
+          <span class="nav-text"> PRODUCTS </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-bar-chart-o fa-2x"></i>
+          <span class="nav-text"> ORDERS </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-font fa-2x"></i>
+          <span class="nav-text"> BLOG </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-table fa-2x"></i>
+          <span class="nav-text"> PERFORMANCE </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-map-marker fa-2x"></i>
+          <span class="nav-text"> SUPPORT </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header id="main-header" class="bg-secondary text-white p-4 mb-3">
+    <!-- heading -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 id="header-title">CRM</h1>
+        </div>
+
+        <!-- search bar -->
+        <div class="col-md-6 align-self-center">
+          <input type="text" class="form-control" id="filter" placeholder="Search properties..." />
         </div>
       </div>
-    </header>
+    </div>
+  </header>
+
+
+ 
+
+
 
     <!-- add PROPERTIES -->
     <div class="container bg-dark">
-      <div id="main" class="card card-body  bg-secondary">
+      <div id="main" class="card card-body  bg-light">
         <!-- heading -->
         <h2 class="title">Products</h2>
 
         <div id="addForm" class="form-inline mb-3">
-          <input type="submit" class="btn btn-dark text-end" value="Add new property" />
+          <input data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" class="btn btn-dark text-end" value="Add new property" />
         </div>
+          <!-- modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">ADD Property</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container text-center">
+                    <div class="row justify-content-center">
+                      <div class="col-md-12">
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                          <div class="col-2">
+                            <label>ID:</label><label class="validation-error hide" id="idValidationError"></label>
+                            <input type="text" name="id" id="id">
+                          </div>
+                          <div class="col-2">
+                            <label>Image:</label>
+                            <input type="text" name="image" id="image">
+                          </div>
+                          <div class="col-2">
+                            <label>Title:</label>
+                            <input type="text" name="title" id="title">
+                          </div>
+                          <div class="col-2">
+                            <label>Category:</label>
+                            <select class="w-50 text-black" name="category" id="category">
+                              <option>Apartment</option>
+                              <option>Villa</option>
+                              <option>House</option>
+                            </select>
+                            <!-- <input type="text" name="category" id="category"> -->
+                          </div>
+                          <div class="col-2">
+                            <label>Price:</label>
+                            <input type="text" name="price" id="price">
+                          </div>
+                          <div class="col-2">
+                            <label>Size:</label>
+                            <input type="text" name="size" id="size">
+                          </div>
+                          <div class="col-2"\>
+                            <label>Author:</label>
+                            <input type="text" name="author" id="author">
+                          </div>
+                          <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      
+
+
+
+
+
 
 
         <h2 class="title"></h2>
         <!-- <ul id="items" class="list-group"> -->
-     <div class="container-fluid">  
-        <div class="row"> 
-  <table id="items" class="table bg-light">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">GALLERY</th>
-        <th scope="col">TITLE</th>
-        <th scope="col">CATEGORY</th>
-        <th scope="col">PRICE</th>
-        <th scope="col">SIZE</th>
-        <th scope="col">AUTHOR</th>
-        <th scope="col">ACTIONS</th>
-      </tr>
-    </thead>
-    </table>
-</div> 
-</div> 
+        <div class="container-fluid">
+          <div class="row">
+            <table class="list" id="employeeList" class="table bg-light">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">GALLERY</th>
+                  <th scope="col">TITLE</th>
+                  <th scope="col">CATEGORY</th>
+                  <th scope="col">PRICE</th>
+                  <th scope="col">SIZE</th>
+                  <th scope="col">AUTHOR</th>
+                  <th scope="col">ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody class="bg-light" id="items">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
 
 
-    <!-- <div id="items"></div> -->
+
+        <!-- <div id="items"></div> -->
 
       </div>
     </div>
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
     <!-- IMPORT JQUERY FIRST -->
     <!-- https://releases.jquery.com/ -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- personal javascript -->
     <script src="../script/app.js"></script>
     <script src="../script/admin.js"></script>
-  </body>
+</body>
+
 </html>

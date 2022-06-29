@@ -1,71 +1,3 @@
-// var form = document.getElementById('addForm');
-// var itemList = document.getElementById('items');
-// var filter = document.getElementById('filter');
-
-// // Form submit event
-// form.addEventListener('submit', addItem);
-// // Delete event
-// itemList.addEventListener('click', removeItem);
-// // Filter event
-// filter.addEventListener('keyup', filterItems);
-
-// // Add item
-// function addItem(e){
-//   e.preventDefault();
-
-//   // Get input value
-//   var newItem = document.getElementById('item').value;
-
-//   // Create new li element
-//   var li = document.createElement('li');
-//   // Add class
-//   li.className = 'list-group-item';
-//   // Add text node with input value
-//   li.appendChild(document.createTextNode(newItem));
-
-//   // Create del button element
-//   var deleteBtn = document.createElement('button');
-
-//   // Add classes to del button
-//   deleteBtn.className = 'btn btn-danger btn-sm float-end delete';
-
-//   // Append text node
-//   deleteBtn.appendChild(document.createTextNode('X'));
-
-//   // Append button to li
-//   li.appendChild(deleteBtn);
-
-//   // Append li to list
-//   itemList.appendChild(li);
-// }
-
-// // Remove item
-// function removeItem(e){
-//   if(e.target.classList.contains('delete')){
-//     if(confirm('Are You Sure?')){
-//       var li = e.target.parentElement;
-//       itemList.removeChild(li);
-//     }
-//   }
-// }
-
-// // Filter Items
-// function filterItems(e){
-//   // convert text to lowercase
-//   var text = e.target.value.toLowerCase();
-//   // Get lis
-//   var items = itemList.getElementsByTagName('li');
-//   // Convert to an array
-//   Array.from(items).forEach(function(item){
-//     var itemName = item.firstChild.textContent;
-//     if(itemName.toLowerCase().indexOf(text) != -1){
-//       item.style.display = 'block';
-//     } else {
-//       item.style.display = 'none';
-//     }
-//   });
-// }
-
 const properties= [
     {   
         id: 1,
@@ -223,8 +155,8 @@ for(var i = 0; i < properties.length; i++){
   <tbody>
     <tr>
       <th scope="row">${properties[i].id}</th>
-      <td class="col-1"><img src="${properties[i].url}" alt="${properties[i].title} img" style="width: 100%; padding: none; display: block;"></td>
-      <td>${properties[i].title}</td>
+      <td class="col-1"><img src="${properties[i].url}" alt="${properties[i].title} img" style="width: 100%; padding: 10px;"></td>
+      <td class="text-centre">${properties[i].title}</td>
       <td>${properties[i].type}</td>
       <td>${properties[i].price}</td>
       <td>${properties[i].area} Sq Ft</td>
@@ -234,4 +166,97 @@ for(var i = 0; i < properties.length; i++){
   </tbody>
 </table>
 `
+}
+
+
+var selectedRow = null
+function onFormSubmit() {
+    if (validate()) {
+        var formData = readFormData();
+        if (selectedRow == null)
+            insertNewRecord(formData);
+        else
+            updateRecord(formData);
+        resetForm();
+    }
+}
+function readFormData() {
+    var formData = {};
+    formData["id"] = document.getElementById("id").value;
+    formData["image"] = document.getElementById("image").value;
+    formData["title"] = document.getElementById("title").value;
+    formData["category"] = document.getElementById("category").value;
+    formData["price"] = document.getElementById("price").value;
+    formData["size"] = document.getElementById("size").value;
+    formData["author"] = document.getElementById("author").value;
+    return formData;
+}
+function insertNewRecord(data) {
+    var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(table.length);
+    cell0 = newRow.insertCell(0);
+    cell0.innerHTML = data.id;
+    cell1 = newRow.insertCell(1);
+    cell1.innerHTML = data.image;
+    cell2 = newRow.insertCell(2);
+    cell2.innerHTML = data.title;
+    cell3 = newRow.insertCell(3);
+    cell3.innerHTML = data.category;
+    cell4 = newRow.insertCell(4);
+    cell4.innerHTML = `$`+ data.price;
+    cell5 = newRow.insertCell(5);
+    cell5.innerHTML = data.size;
+    cell6 = newRow.insertCell(6);
+    cell6.innerHTML = data.author;
+    cell7 = newRow.insertCell(7);
+    cell7.innerHTML = `<a class="px-2" onClick="onEdit(this)"><i class="fa-solid fa-pen-to-square"></i></a>
+                       <a onClick="onDelete(this)"><i class="fa-solid fa-trash-can"></i></a>`;
+}
+function resetForm() {
+    document.getElementById("id").value = "";
+    document.getElementById("image").value = "";
+    document.getElementById("title").value = "";
+    document.getElementById("category").value = "";
+    document.getElementById("price").value = "";
+    document.getElementById("size").value = "";
+    document.getElementById("author").value = "";
+    selectedRow = null;
+}
+function onEdit(td) {
+    selectedRow = td.parentElement.parentElement;
+    document.getElementById("id").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("image").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("title").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("category").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("price").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("size").value = selectedRow.cells[5].innerHTML;
+    document.getElementById("author").value = selectedRow.cells[6].innerHTML;
+}
+function updateRecord(formData) {
+    selectedRow.cells[0].innerHTML = formData.id;
+    selectedRow.cells[1].innerHTML = formData.image;
+    selectedRow.cells[2].innerHTML = formData.title;
+    selectedRow.cells[3].innerHTML = formData.category;
+    selectedRow.cells[4].innerHTML = formData.price;
+    selectedRow.cells[5].innerHTML = formData.size;
+    selectedRow.cells[6].innerHTML = formData.author;
+}
+function onDelete(td) {
+    if (confirm('Are you sure to delete this record ?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById("employeeList").deleteRow(row.rowIndex);
+        resetForm();
+    }
+}
+function validate() {
+    isValid = true;
+    if (document.getElementById("id").value == "") {
+        isValid = false;
+        document.getElementById("idValidationError").classList.remove("hide");
+    } else {
+        isValid = true;
+        if (!document.getElementById("idValidationError").classList.contains("hide"))
+            document.getElementById("idValidationError").classList.add("hide");
+    }
+    return isValid;
 }
