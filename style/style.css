@@ -26,14 +26,31 @@
 
 #cards {
     height: 15rem;
-    background-color: blueviolet;
-    border: 2px solid black;
     color: aliceblue;
   }
 
+#FilterTabs{
+    position: relative;
+    height: 10rem;
+    border-radius: 5px;
+    top: 7rem;
+    box-shadow: 2px 6px 19px 1px rgba(0,0,0,0.42);
+-webkit-box-shadow: 2px 6px 19px 1px rgba(0,0,0,0.42);
+-moz-box-shadow: 2px 6px 19px 1px rgba(0,0,0,0.42);
+    background-color: white;
+}
+
+#nav_search{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -1.8rem;
+
+}
+
 main {
     min-height: 100vh;
-    background-color: bisque;
 }
 #landingText{
     display: block;
@@ -113,12 +130,13 @@ nav {
 }
 
 footer {
-    background-color: gray;
+    padding: 3rem;
+    color: white;
+    background-color: #004274;
     min-height: 50vh;
 }
 
 #properties{
-    border: 5px solid blue;
     margin-top: 20rem;
     min-height: 40rem;
 }
@@ -126,7 +144,7 @@ footer {
 #discover, 
 #contactUs, 
 #newsletter {
-    border: 3px solid white;
+    border: 3px solid black;
     min-height: 15rem;
     margin: 1rem;
 }
@@ -134,6 +152,49 @@ footer {
 #copyright{
     border: 3px solid black;
     margin: 1rem;
-    width: 96%;
+    width: 10vh;
 }
 
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(26, 22, 22);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #504444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

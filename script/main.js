@@ -1,3 +1,5 @@
+//local Storage
+
 console.log(JSON.parse(window.localStorage.getItem('records')));
 
 let properties = JSON.parse(window.localStorage.getItem('records'));

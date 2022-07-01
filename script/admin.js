@@ -148,8 +148,6 @@ console.log(('records', JSON.stringify(properties)));
 
 let container = document.getElementById("items")
 
-
-
 for(var i = 0; i < properties.length; i++){
   container.innerHTML += `
   <tbody>
@@ -161,7 +159,7 @@ for(var i = 0; i < properties.length; i++){
       <td>${properties[i].price}</td>
       <td>${properties[i].area} Sq Ft</td>
       <td>${properties[i].author}</td>
-      <td><a><i class="fa-solid fa-pen-to-square px-3"></i></a><a><i class="fa-solid fa-trash-can"></i></a></td>
+      <td><a onClick="onEdit(this)"><i class="fa-solid fa-pen-to-square px-3"></i></a><a onClick="onDelete(this)"><i class="fa-solid fa-trash-can"></i></a></td>
     </tr>
   </tbody>
 </table>
