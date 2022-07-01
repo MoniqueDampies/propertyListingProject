@@ -114,11 +114,10 @@
                     <li>
                         <ul class="px-6">
                             <span id="contactNumber">(800) 987 6543</span>
-
                         </ul>
-
                     </li>
-                    <a href="./html/admin.html" target="_blank"><button id="listingBtn" class="btn text-center text-white">create a listing</button></a>
+                    <a href="./html/admin.html" target="_blank"><button id="listingBtn"
+                            class="btn text-center text-white">create a listing</button></a>
             </div>
     </nav>
     <header>
@@ -143,18 +142,13 @@
     <main>
         <section id="filterBox">
             <div class="container text-center">
-
                 <div id="FilterTabs" class="row justify-content-center">
-
                     <div class="col-lg-12">
-
                         <a id="nav_search" class="px-2 py-1 pt-2 pb-2 rounded" href="#">All Status</a>
                         <a id="nav_search" class="px-2 py-1 pt-2 pb-2 rounded" href="#">For Sale</a>
                         <a id="nav_search" class="px-2 py-1 pt-2 pb-2 rounded" href="#">For Rent</a>
                         <div id="nav_search_container">
-
                             <div class="row justify-content-center text-black">
-
                                 <div class="col-2 text-black">
                                     <label>Looking for</label>
                                     <select class="text-black border-1 border-primary`">
@@ -164,7 +158,6 @@
                                         <option>Air BNB</option>
                                     </select>
                                 </div>
-
                                 <div class="col-2">
                                     <label>Location</label>
                                     <select class="text-black border-1 border-primary`">
@@ -173,44 +166,32 @@
                                         <option>Los Angeles</option>
                                         <option>Chicago</option>
                                 </div>
-
                                 <div class="col-2">
                                     <label>Property Size</label>
-                                    <div class="dropdown">
-                                      <button class="dropbtn">Dropdown 
-                                        <i class="fa fa-caret-down"></i>
-                                      </button>
-                                      <div class="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
+                                        <div class="col-2">
+                                            <label>Your Budget</label>
+                                            <input class="bg-white border-1" id="nav_input" type="text"
+                                                placeholder="Max.price">
+                                        </div>
+                                        <div class="col-2">
+                                            <br>
+                                            <button
+                                                class="bg-secondary text-white border-0 rounded px-4 py-1">Search</button>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="col-2">
-                                    <label>Your Budget</label>
-                                    <input class="bg-white border-1" id="nav_input" type="text" placeholder="Max.price">
-                                </div>
-
-                                <div class="col-2">
-                                    <br>
-                                    <button class="bg-secondary text-white border-0 rounded px-4 py-1">Search</button>
-                                </div>
-
                             </div>
-
-
-
                         </div>
-
                     </div>
-
-
                 </div>
-
-            </div>
-            </div>
         </section>
 
+        <section>
+            <div id="mainHeading" class="container-fluid text-center">
+                <h2 id="mainHeading" class="">Discover Our Featured Listings</h2>
+                <p id="mainHeading" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+        </section>
 
         <section id="properties">
             <div class="container-fluid">
@@ -220,44 +201,127 @@
             </div>
         </section>
     </main>
-    <footer class="px-3">
-        <div class="row align-items-center">
-            <div id="discover" class="col-lg-3">
-                <h4>Discover</h4>
-            </div>
-            <div id="contactUs" class="col-lg-3">
-                <h4>Contact Us</h4>
-            </div>
-            <div id="newsletter" class="col-lg-5">
-                <h4>Newsletter</h3>
-            </div>
-            <section class="row" id="copyright">
-                copyright
-            </section>
+
+    <footer>
+        <section class="text-light py-5 vh-50" id="footer">
+            <div class="container vh-50 p-4">
+                <div class="row align-items-start py-5">
+                    <div class="col-sm-3">
+                        <H5>Discovery</H5>
+                    </div>
+                    <div class="col-sm-3">
+                        <H5>Contact us</H5>
+                    </div>
+                    <div class="col-sm-3">
+                        <H5> Newsletter</H5>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col-sm-3 py-2">
+                            <h6> > Miami</h6>
+                        </div>
+                        <div class="col-sm-3 py-2">
+                            <h6><i class="fa-solid fa-location-dot"></i> 774 NE 84th St Miami, FL 33879</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <form action="" method="POST">
+                                <input id="newsletterInput" autocomplete="off" class="input" name="name" type="text" placeholder="Please enter the email"
+                                    size="50" required="">
+                                <button class="btn btn-link text-light " type="submit">Submit</button>
+                        </div>
+                        </form>
+                        <div class="col-sm-3 py-2">
+                            <h6> > Los Angeles</h6>
+                        </div>
+                        <div class="col-sm-3 py-2">
+                            <h6><i class="fa-solid fa-phone"></i> 987 654 9875</h6>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col ">
+                            <h6>> Chicago</h6>
+                        </div>
+                        <div class="col ">
+                            <h6><i class="fa-solid fa-phone"></i> 879 456 1349</h6>
+                        </div>
+                        <div class="col-6">
+                            <h6>Houzez is a premium WordPress theme for Designers & Real Estate Agents.</h6>
+                        </div>
+                    </div>
+                    <div class="row align-items-start py-2">
+                        <div class="col-3 ">
+                            <h6> > New York</h6>
+                        </div>
+                        <div class="col-3 ">
+                            <h6><i class="fa-solid fa-envelope"></i> email@houzez.co</h6>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
     </footer>
+    <section class="bg-dark px-5">
+        <div class="container text-center bg-dark ">
+            <div id="copyrightFooter" class="row justify-content-center bg-dark text-white">
+                <!-- left -->
+                <div class="col-4">
+                </div>
+                <!-- center -->
+                <div class="col-4">
+                    <p> 2022 © Monique Dampies  - All rights reserved</p>
+                </div>
+                <!-- right -->
+                <div class="col-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+  
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
     <!-- IMPORT JQUERY FIRST -->
     <!-- https://releases.jquery.com/ -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- personal javascript -->
-    <script src="../script/main.js"></script>
+    <script src="../script/main.js"></script>    
     <script>
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 autoplay: true,
-                items: 3,
                 loop: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+
+                    }
+                }
             });
         });
     </script>

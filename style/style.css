@@ -198,3 +198,28 @@ footer {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+#copyrightFooter{
+    width: 100%;
+    min-height: 5vh;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#newsletterInput{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#mainHeading{
+    margin-top: 10rem;
+    margin-bottom: -17rem;
+    line-height: 150px;
+}

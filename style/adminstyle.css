@@ -172,3 +172,11 @@ nav.main-menu li.active>a,
     height: 62vh;
     overflow-y: scroll;
 }
+
+a{
+    text-decoration: none;
+}
+
+#mainHeading{
+    margin-top: 12rem;
+}
